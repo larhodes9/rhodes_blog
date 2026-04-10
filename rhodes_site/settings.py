@@ -131,7 +131,7 @@ if not DEBUG:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #MEDIA_ROOT = BASE_DIR / "uploads" # Actual directory
-#MEDIA_URL = "/site-images/"       # Mapped URL
+MEDIA_URL = "/media/"       # Mapped URL
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': os.environ.get('CLOUDINARY_CLOUD_NAME'),

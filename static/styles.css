@@ -1,0 +1,45 @@
+:root {
+    --wsu-purple: #4b2882;
+    --wsu-white: #ffffff;
+    --grey-light: #f4f4f4;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: var(--grey-light);
+    color: var(--text-color);
+}
+
+#main-navigation {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--wsu-purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    box-sizing: border-box;
+}
+
+#main-navigation h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#main-navigation nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+#main-navigation nav a:hover {
+    background-color: white;
+    color: var(--wsu-purple);
+}

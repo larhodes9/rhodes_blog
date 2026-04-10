@@ -1,0 +1,83 @@
+#base-form {
+    margin: 4rem auto;
+    width: 90%;
+    max-width: 40rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#base-form h2 {
+    color: var(--wsu-purple);
+    font-size: 2rem;
+    margin-top: 0;
+    border-bottom: 2px solid var(--grey-light);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+/* Styling the actual inputs and textareas */
+.form-control input, 
+.form-control textarea, 
+.form-control select {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-control input:focus, 
+.form-control textarea:focus {
+    outline: none;
+    border-color: var(--wsu-purple);
+    background-color: #f9f7ff;
+}
+
+/* Handling the errors */
+.form-control.invalid input {
+    border-color: #d9534f;
+    background-color: #fff4f4;
+}
+
+.errorlist {
+    list-style: none;
+    margin: 0.25rem 0 0 0;
+    padding: 0;
+    color: #d9534f;
+    font-size: 0.85rem;
+}
+
+/* The primary button */
+#base-form button {
+    cursor: pointer;
+    background-color: var(--wsu-purple);
+    color: white;
+    border: 1px solid var(--wsu-purple);
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    font: inherit;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+}
+
+#base-form button:hover,
+#base-form button:active {
+    background-color: #361d5e;
+    border-color: #361d5e;
+    transform: translateY(-1px);
+}

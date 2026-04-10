@@ -1,0 +1,59 @@
+#stored-posts {
+    margin: 4rem auto;
+    width: 90%;
+    max-width: 50rem;
+}
+
+#stored-posts h1 {
+    color: var(--wsu-purple);
+    border-bottom: 2px solid var(--wsu-purple);
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+#stored-posts p {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#stored-posts ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#stored-posts li {
+    background-color: white;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+#stored-posts li:hover {
+    transform: translateX(10px);
+    background-color: #fcfaff;
+}
+
+#stored-posts li a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    padding: 1.5rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Adding a "view" arrow or indicator */
+#stored-posts li a::after {
+    content: 'View Post →';
+    font-size: 0.9rem;
+    color: var(--wsu-purple);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,34 @@
+#welcome {
+    text-align: center;
+    padding: 4rem 10%;
+    background-color: var(--wsu-purple);
+    color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+#welcome img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+#latest-posts, #about, #all-posts {
+    padding: 2rem 10%;
+}
+
+#latest-posts ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0;
+}
+
+#about {
+    background-color: #e2e2e2;
+    margin-top: 2rem;
+    text-align: center;
+}

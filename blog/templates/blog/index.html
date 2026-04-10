@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+Rhodes Adventures
+{% endblock %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
+
+{% block content %}
+
+
+    <section id="welcome">
+        <header>
+            <img src="{% static 'blog/images/self.jpg' %}" alt="Me">
+            <h2>"Rhodes's Adventure Blog"</h2>
+        </header>
+        <p>Welcome to my high adventure site.</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My latest adventures</h2>
+        <ul>
+            {% for post in posts %}
+                {% include "blog/includes/_post.html" %}
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>What I Do</h2>
+        <p>I am an instructor at Weber State University.</p>
+        <p>In my spare time I enjoy hiking all around Utah.</p>
+    </section>
+
+{% endblock %}

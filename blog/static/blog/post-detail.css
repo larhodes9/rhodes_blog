@@ -1,0 +1,178 @@
+#summary {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 3rem 10%;
+}
+
+#summary img {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+#summary address {
+    font-style: italic;
+    color: #ccc;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+
+/* --- Comment Section Styling --- */
+
+#comments {
+    max-width: 800px; 
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white; 
+    border-radius: 8px;
+}
+
+#comments h2 {
+    color: var(--wsu-purple);
+    border-bottom: 2px solid var(--grey-light);
+    padding-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+#comments ul {
+    list-style: none;
+    padding: 0;
+}
+
+#comments li {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--grey-light);
+}
+
+#comments li:last-child {
+    border-bottom: none;
+}
+
+#comments h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#comments p {
+    margin: 0.5rem 0 0 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* --- Comment Form Styling --- */
+
+#comment-form {
+    max-width: 800px;
+    margin: 2rem auto 5rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    border-top: 4px solid var(--wsu-purple);
+}
+
+#comment-form h2 {
+    color: var(--wsu-purple);
+    margin-top: 0;
+}
+
+#comment-form .form-control {
+    margin-bottom: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#comment-form label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+#comment-form input, 
+#comment-form textarea {
+    font: inherit;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: var(--grey-light);
+}
+
+#comment-form input:focus,
+#comment-form textarea:focus {
+    outline: none;
+    border-color: var(--wsu-purple);
+    background-color: white;
+}
+
+#comment-form button {
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    background-color: var(--wsu-purple);
+    color: white;
+    border: 1px solid var(--wsu-purple);
+    padding: 0.75rem 2rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+#comment-form button:hover,
+#comment-form button:active {
+    background-color: #361d5e;
+    border-color: #361d5e;
+}
+
+/* Error Handling */
+#comment-form .invalid input,
+#comment-form .invalid textarea {
+    border-color: red;
+    background-color: #fff0f0;
+}
+
+.errorlist {
+    color: red;
+    list-style: none;
+    padding: 0;
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+
+/* Added for "Read Later" button */
+#read-later {
+    margin: 2rem 0;
+    text-align: right;
+}
+
+#read-later button {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid var(--wsu-purple);
+    color: var(--wsu-purple);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+#read-later button:hover {
+    background-color: var(--wsu-purple);
+    color: white;
+}

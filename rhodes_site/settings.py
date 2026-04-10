@@ -136,13 +136,14 @@ if not DEBUG:
             "BACKEND": "cloudinary_storage.storage.MediaCloudinaryStorage",
         },
         "staticfiles": {
-            # Change 'CompressedManifestStaticFilesStorage' to 'CompressedStaticFilesStorage'
-            "BACKEND": "whitenoise.storage.CompressedStaticFilesStorage",
+            # Use the most basic WhiteNoise storage to stop the build crashes
+            "BACKEND": "whitenoise.storage.StaticFilesStorage",
         },
     }
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+    # Compatibility shims for the cloudinary library
+    STATICFILES_STORAGE = "whitenoise.storage.StaticFilesStorage"
+    DEFAULT_FILE_STORAGE = "cloudinary_storage.storage.MediaCloudinaryStorage"
 
 #MEDIA_ROOT = BASE_DIR / "uploads" # Actual directory
 MEDIA_URL = "/media/"       # Mapped URL
